@@ -1,11 +1,17 @@
 {
-  "name": "hello_world",
+  "name": "llrt-put-item",
   "version": "1.0.0",
   "description": "LLRT instrumented lambda example",
   "main": "app.js",
   "author": "SAM CLI",
   "scripts": {
-    "compile": "tsc"
+    "compile": "tsc",
+    "build": "sam build",
+    "hello": "sam build && sam local invoke LlrtPutItemFunction"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "3.525.0",
+    "aws-sdk": "2.1569.0"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.92",

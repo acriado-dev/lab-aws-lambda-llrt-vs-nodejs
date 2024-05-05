@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-put-item",
+  "version": "1.0.0",
+  "description": "Nodejs put item lambda example",
+  "main": "app.js",
+  "author": "SAM CLI",
+  "scripts": {
+    "compile": "tsc",
+    "build": "sam build",
+    "nodejs-put-item": "sam build && sam local invoke NodejsPutItemFunction"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "3.525.0",
+    "aws-sdk": "2.1569.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.92",
+    "@types/node": "^18.11.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
